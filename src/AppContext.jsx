@@ -12,6 +12,8 @@ export const AppProvider = ({ children }) => {
   const [authVisible, setAuthVisible] = useState(true);
   const [popupVisible, setPopupVisible] = useState(false);
   const [popupText, setPopupText] = useState("");
+  const [avatar, setAvatar] = useState("");
+  const [AvatarCreatorShow, setAvatarCreatorShow] = useState(false);
   const { address } = useAccount();
   const { open } = useWeb3Modal();
   return (
@@ -37,6 +39,10 @@ export const AppProvider = ({ children }) => {
         setPopupText,
         username,
         setUsername,
+        avatar,
+        setAvatar,
+        AvatarCreatorShow,
+        setAvatarCreatorShow,
       }}
     >
       {children}

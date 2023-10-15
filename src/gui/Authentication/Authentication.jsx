@@ -1,6 +1,8 @@
 import { disconnect } from "@wagmi/core";
 import { useAppContext } from "@/AppContext.jsx";
 import cn from "classname";
+
+// import { ModelViewerElement } from "@google/model-viewer";
 const Authentication = () => {
   const { authVisible } = useAppContext();
   const startButtonHandler = () => {
@@ -8,6 +10,7 @@ const Authentication = () => {
   };
   return (
     <div className={cn(!authVisible && "hidden")}>
+
       <img src='./hero/buttom.svg' className='fixed select-none w-full pointer-events-none left-0 z-5 bottom-0' />
       <img src='./hero/top.svg' className='fixed select-none w-full pointer-events-none left-0 z-5 top-0' />
       <header className='text-white pt-[60px] flex justify-between px-[20px] fixed top-0 left-0 right-0 mx-0 w-full z-10'>

@@ -28,7 +28,6 @@ window.tb = new Threebox(map, map.getCanvas().getContext("webgl"), {
   enableSelectingObjects: true,
 });
 
-
 const secondsPerRevolution = 120;
 const maxSpinZoom = 5;
 const slowSpinZoom = 3;

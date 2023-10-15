@@ -1,3 +1,3 @@
-export const step03_createAvatar = ({ setShowModal, setModalData, username, setUsername }) => {
-
+export const step03_createAvatar = ({ setAvatarCreatorShow }) => {
+    setAvatarCreatorShow(true);
 };
